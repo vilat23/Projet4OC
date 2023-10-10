@@ -1,3 +1,13 @@
-body{
-    background: #000;
+body {
+    background: #fff;
+}
+$border-rad: 2rem;
+$clr-btn: #ccc;
+.btn {
+    border-radius: $border-rad;
+    background-color: $clr-btn;
+    transition: background-color 250ms;
+    &:hover {
+        background-color: darken($clr-btn, 5);
+    }
 }

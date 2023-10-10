@@ -1,5 +1,14 @@
 body {
-  background: #000;
+  background: #fff;
+}
+
+.btn {
+  border-radius: 2rem;
+  background-color: #ccc;
+  transition: background-color 250ms;
+}
+.btn:hover {
+  background-color: #bfbfbf;
 }
 
 /*# sourceMappingURL=style.css.map */
