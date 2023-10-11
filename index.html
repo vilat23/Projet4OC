@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="load-container">
-		<div class="cat">
-			<p>Merci pour votre patience</p>
-			<p>Voici votre chat</p>
-		</div>
-		<div class="progress">
-			<div class="progress__bar"></div>
-		</div>
-</div>
+
+    <!--Début dev en mobile first-->
+
+    <header>
+        <div class="logo">
+            <p class="logo__siteLogo">ohmyfood</p>
+        </div>
+        <div class="location">
+            <i class="fa-solid fa-location-dot fa-sm"></i>
+            <p class="location__city">Paris, Belleville</p>
+        </div>
+    </header>
+
+    <!--Dev section Search-->
+
+    <section class="search">
+        <h1 class="search__title">Réservez le menu qui vous convient</h1>
+        <p class="search__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+        <button class="search__button">Explorer nos restaurants</button>
+    </section>
+
+    <!--Dev section Fonctionnement-->
+
+    <section class="fonctionnement">
+        <h2 class="fonctionnement__title">Fonctionnement</h2>
+        <article class="fonctionnement__info">Choisissez un restaurant</article>
+        <article class="fonctionnement__info">Composez votre menu</article>
+        <article class="fonctionnement__info">Dégustez au restaurant</article>
+    </section>
+
+    <!--Dev section Cards Restaurants-->
+
+    <section class="restaurants">
+        <h2 class="restaurants__title">Restaurants</h2>
+        <article class="restaurants__cards">La palette du goût</article>
+        <article class="restaurants__cards">La note enchantée</article>
+        <article class="restaurants__cards">À la française</article>
+        <article class="restaurants__cards">Le délice des sens</article>
+    </section>
+
+    <!--Dev du Footer-->
+
+    <footer>
+        <p class="footer__tiltle">ohmyfood</p>
+        <ul class="footer__links">
+            <li class="footer__link">Proposer un restaurant</li>
+            <li class="footer__link">Devenir partenaire</li>
+            <li class="footer__link">Mentions légales</li>
+            <li class="footer__link">Contact</li>
+        </ul>
+    </footer>
+
 </body>
+
 </html>

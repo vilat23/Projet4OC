@@ -1,77 +1,73 @@
-@keyframes progress-bar {
-  0% {
-    transform: scaleX(0);
-  }
-  17% {
-    transform: scaleX(0.18);
-  }
-  24% {
-    transform: scaleX(0.4);
-    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
-  }
-  46% {
-    transform: scaleX(0.81);
-    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-.load-container {
-  margin: 300px auto;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column-reverse;
-}
-.load-container .progress {
-  width: 50vw;
-  height: 2vw;
-  border: 2px solid #022f40;
-  padding: 0.25rem;
-  margin-bottom: 30px;
-}
-.load-container .progress__bar {
-  height: 100%;
-  background: #15dea5;
-  height: 100%;
-  transform-origin: left;
-  transform: scaleX(0.5);
-  animation: progress-bar 1000ms 150ms both;
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.cat {
-  animation: cat 0ms 1300ms both;
-  width: 51vw;
-  height: 30vw;
-  position: absolute;
-  overflow: hidden;
-  background-image: url("https://bit.ly/2XJJLKn");
-  background-size: cover;
-  background-position: -20%;
-  z-index: 1;
+/*----------Sass du header------------*/
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 13px 0 5px 0;
+}
+.logo .logo__siteLogo {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  margin: 0;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  padding: 15px;
+}
+.location i {
+  margin-right: 14px;
+  color: #353535;
+}
+.location .location__city {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #353535;
+}
+
+/*----------Sass section Search------------*/
+.search {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0.1rem;
-  font-size: 4vw;
-  font-weight: 900;
-  color: white;
+  background-color: #F6F6F6;
+}
+.search .search__title {
+  margin: 35px 0 0 0;
+  text-align: center;
+  font-size: 22px;
+  padding: 0px 30px;
+}
+.search .search__subtitle {
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0px 22px;
+  color: #353535;
+}
+.search .search__button {
+  margin: 27px 0 50px 0;
+  height: 50px;
 }
 
-@keyframes cat {
-  0% {
-    transform: translateX(-9999px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.fonctionnement {
+  padding: 30px 20px;
 }
-body {
-  font-family: sans-serif;
-  background-color: #F4FCF8;
+.fonctionnement .fonctionnement__title {
+  font-size: 22px;
+  font-weight: 700;
+  border-bottom: 3px #ccc solid;
 }
 
 /*# sourceMappingURL=style.css.map */
