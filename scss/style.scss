@@ -124,6 +124,52 @@ $section-grey-bkg: #F6F6F6;
         }
     }
 
+}
+
+/*----------Sass section Restaurants Cards------------*/
 
 
+.restaurants{
+    padding: 30px 17px;
+    background-color: $section-grey-bkg;
+
+    .restaurants__title{
+        @include section-title;
+    }
+
+    .restaurants__cards{
+        background-color: white;
+        margin-bottom: 20px;
+        border-radius: 15px;
+   
+         img{
+        height: 140px;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+         }
+
+        .restaurants__cardsContent{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+
+            h3{
+                font-size: 16px;
+                font-weight: 700;
+                width: 100%;
+                margin: 0;
+            }
+
+            p{
+                font-size: 14px;
+                font-weight: 300;
+                margin: 5px 0;
+            }
+            
+
+        }
+    }
 }
