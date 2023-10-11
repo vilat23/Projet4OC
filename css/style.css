@@ -61,13 +61,13 @@ body {
   height: 50px;
 }
 
+/*----------Sass section Fonctionnement------------*/
 .fonctionnement {
   padding: 30px 20px;
 }
 .fonctionnement .fonctionnement__title {
   font-size: 22px;
   font-weight: 700;
-  border-bottom: 3px #ccc solid;
 }
 
 /*# sourceMappingURL=style.css.map */
