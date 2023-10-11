@@ -94,14 +94,33 @@ $section-grey-bkg: #F6F6F6;
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-bottom: 20px;
 
         .fonctionnement__number {
             margin: 0;
             font-size: 28px;
             color: #9356DC;
         }
-        .fonctionnement__info{
-            padding: 20px;
+
+        .fonctionnement__info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 25px;
+            width: 80%;
+            border-radius: 20px;
+            background-color: $section-grey-bkg;
+
+            i {
+                margin-right: 10px;
+            }
+
+            .fonctionnement__infoTitle {
+                margin: 0;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
         }
     }
 

@@ -73,6 +73,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 20px;
 }
 .fonctionnement .fonctionnement__card .fonctionnement__number {
   margin: 0;
@@ -80,7 +81,21 @@ body {
   color: #9356DC;
 }
 .fonctionnement .fonctionnement__card .fonctionnement__info {
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px;
+  width: 80%;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+}
+.fonctionnement .fonctionnement__card .fonctionnement__info i {
+  margin-right: 10px;
+}
+.fonctionnement .fonctionnement__card .fonctionnement__info .fonctionnement__infoTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
