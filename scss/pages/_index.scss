@@ -1,0 +1,150 @@
+
+/*----------Sass du header------------*/
+
+
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    padding: 15px;
+
+
+    i {
+        margin-right: 14px;
+        color: $secondary-text-color;
+    }
+
+    .location__city {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: $secondary-text-color;
+    }
+}
+
+/*----------Sass section Search------------*/
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $section-grey-bkg;
+
+
+    .search__title {
+        margin: 35px 0 0 0;
+        text-align: center;
+        font-size: 22px;
+        padding: 0px 30px;
+    }
+
+    .search__subtitle {
+        margin: 10px 0 0 0;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 0px 22px;
+        color: $secondary-text-color;
+    }
+
+    .search__button {
+        margin: 27px 0 50px 0;
+        height: 50px;
+    }
+}
+
+/*----------Sass section Fonctionnement------------*/
+
+.fonctionnement {
+    padding: 30px 20px;
+
+    .fonctionnement__title {
+        @include section-title;
+    }
+
+    .fonctionnement__card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .fonctionnement__number {
+            margin: 0;
+            font-size: 28px;
+            color: #9356DC;
+        }
+
+        .fonctionnement__info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 25px;
+            width: 80%;
+            border-radius: 20px;
+            background-color: $section-grey-bkg;
+
+            i {
+                margin-right: 10px;
+            }
+
+            .fonctionnement__infoTitle {
+                margin: 0;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+        }
+    }
+
+}
+
+/*----------Sass section Restaurants Cards------------*/
+
+
+.restaurants {
+    padding: 30px 17px;
+    background-color: $section-grey-bkg;
+
+    .restaurants__title {
+        @include section-title;
+    }
+
+    .restaurants__cards {
+        background-color: white;
+        margin-bottom: 20px;
+        border-radius: 15px;
+
+        img {
+            height: 140px;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+
+        .restaurants__cardsContent {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+
+            h3 {
+                font-size: 16px;
+                font-weight: 700;
+                width: 100%;
+                margin: 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                margin: 5px 0;
+            }
+
+
+        }
+    }
+}
+

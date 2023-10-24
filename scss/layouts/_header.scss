@@ -1,0 +1,16 @@
+
+
+// SIMPLE HEADER WITH LOGO
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 13px 0 5px 0;
+
+    .logo__siteLogo {
+        font-family: 'Shrikhand', serif;
+        font-size: 28px;
+        margin: 0;
+    }
+}
