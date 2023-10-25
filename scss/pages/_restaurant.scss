@@ -1,7 +1,4 @@
-body {
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 $main-text-color: #000000;
 $secondary-text-color: #353535;
@@ -74,24 +71,18 @@ $section-grey-bkg: #F6F6F6;
     }
 }
 
-.order__button {
+/*----------Sass de la section CTA------------*/
+.order__cta{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+
 }
+
 
 /*----------Sass section Footer------------*/
 
-footer {
-    background-color: #353535;
-    padding: 10px;
-    color: white;
-
-    p {
-        margin: 0;
-    }
-}
 
 /*# sourceMappingURL=menu.css.map */
