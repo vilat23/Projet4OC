@@ -193,9 +193,9 @@ footer p {
   font-weight: 800;
   margin: 0;
 }
-.restaurants .restaurants__cards .restaurants__cardsContent i {
-  margin-top: 10px;
-  color: #101010;
+.restaurants .restaurants__cards .restaurants__cardsContent .iconeLikeEmpty {
+  height: 20px;
+  border-radius: 0;
 }
 .restaurants .restaurants__cards .restaurants__cardsContent p {
   font-size: 14px;
