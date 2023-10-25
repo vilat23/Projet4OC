@@ -15,12 +15,13 @@
 /*----------Sass section Footer------------*/
 footer {
   background-color: #353535;
-  padding: 2px 20px;
+  padding: 2px 20px 20px 20px;
   color: white;
 }
 footer ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 footer ul li {
   font-size: 13px;
@@ -37,6 +38,7 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10px;
 }
 
 /*----------Sass du header (header dans les layouts)------------*/
@@ -87,12 +89,12 @@ footer p {
 
 /*----------Sass section Fonctionnement------------*/
 .fonctionnement {
-  padding: 24px 15px 40px 15px;
+  padding: 20px 15px 36px 15px;
 }
 .fonctionnement .fonctionnement__title {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 800;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 .fonctionnement .fonctionnement__card {
   display: flex;
@@ -163,9 +165,9 @@ footer p {
   background-color: #F6F6F6;
 }
 .restaurants .restaurants__title {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 800;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 .restaurants .restaurants__cards {
   background-color: white;
@@ -177,6 +179,7 @@ footer p {
   width: 100%;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
+  object-position: bottom;
 }
 .restaurants .restaurants__cards .restaurants__cardsContent {
   display: flex;
@@ -189,6 +192,10 @@ footer p {
   font-size: 15px;
   font-weight: 800;
   margin: 0;
+}
+.restaurants .restaurants__cards .restaurants__cardsContent i {
+  margin-top: 10px;
+  color: #101010;
 }
 .restaurants .restaurants__cards .restaurants__cardsContent p {
   font-size: 14px;
@@ -256,9 +263,9 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 44px;
-  padding: 10px 19px;
-  font-size: 14px;
+  height: 41px;
+  padding: 6px 19px;
+  font-size: 13px;
   font-weight: 500;
   color: white;
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
