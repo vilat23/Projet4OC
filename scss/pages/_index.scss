@@ -91,7 +91,7 @@
         @media (min-width:767px) {
 
             width: 100%;
-            font-size: 24px;
+            font-size: 23px;
             margin-bottom: 26px;
 
         }
@@ -236,7 +236,8 @@
 
         @media (min-width:767px) {
             width: 100%;
-            font-size: 24px;
+            font-size: 23px;
+            margin-bottom: 25px;
         }
     }
 
@@ -256,7 +257,6 @@
             width: 100%;
             border-radius: 15px 15px 0 0;
             object-fit: cover;
-
             @media (min-width:767px) {
                 height: 170px;
             }
@@ -267,7 +267,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-
             padding: 0px 10px 18px 10px;
 
             h3 {
@@ -275,10 +274,13 @@
                 font-weight: 800;
                 padding-top: 10px;
                 margin: 0;
+                @media (min-width:767px) {
+                    font-size: 17px;
+                    font-weight: 600;
+                }
             }
 
             i {
-
                 height: 18px;
                 padding-top: 14px;
             }
