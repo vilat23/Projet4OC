@@ -11,6 +11,17 @@
   font-size: 25px;
   margin: 0;
 }
+@media (min-width: 767px) {
+  .logo .logo__siteLogo {
+    font-size: 36px;
+  }
+}
+@media (min-width: 767px) {
+  .logo {
+    height: 82px;
+    align-items: center;
+  }
+}
 
 /*----------Sass section Footer------------*/
 footer {
@@ -55,11 +66,26 @@ footer p {
   margin-right: 14px;
   color: #353535;
 }
+@media (min-width: 767px) {
+  .location i {
+    font-size: 16px;
+  }
+}
 .location .location__city {
   margin: 0;
   font-size: 13px;
   font-weight: 600;
   color: #353535;
+}
+@media (min-width: 767px) {
+  .location .location__city {
+    font-size: 16px;
+  }
+}
+@media (min-width: 767px) {
+  .location {
+    height: 30px;
+  }
 }
 
 /*----------Sass section Search------------*/
@@ -78,6 +104,11 @@ footer p {
   font-weight: 600;
   padding: 0px 50px;
 }
+@media (min-width: 767px) {
+  .search .search__title {
+    font-size: 40px;
+  }
+}
 .search .search__subtitle {
   margin: 10px 0 23px 0;
   text-align: center;
@@ -86,6 +117,17 @@ footer p {
   line-height: normal;
   padding: 0px 22px;
   color: #353535;
+}
+@media (min-width: 767px) {
+  .search .search__subtitle {
+    font-size: 18px;
+    margin: 30px 0 30px 0;
+  }
+}
+@media (min-width: 767px) {
+  .search {
+    padding-bottom: 30px;
+  }
 }
 
 /*----------Sass section Fonctionnement------------*/
@@ -96,6 +138,13 @@ footer p {
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 20px;
+}
+@media (min-width: 767px) {
+  .fonctionnement .fonctionnement__title {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 26px;
+  }
 }
 .fonctionnement .fonctionnement__card {
   display: flex;
@@ -109,6 +158,11 @@ footer p {
   font-size: 26px;
   color: #9356DC;
 }
+@media (min-width: 767px) {
+  .fonctionnement .fonctionnement__card .fonctionnement__number {
+    font-size: 30px;
+  }
+}
 .fonctionnement .fonctionnement__card .fonctionnement__info {
   display: flex;
   flex-direction: row;
@@ -119,14 +173,36 @@ footer p {
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
+@media (min-width: 767px) {
+  .fonctionnement .fonctionnement__card .fonctionnement__info {
+    height: 30px;
+    margin-right: 8%;
+  }
+}
 .fonctionnement .fonctionnement__card .fonctionnement__info i {
   margin-right: 15px;
   color: #7e7e7e;
+}
+@media (min-width: 767px) {
+  .fonctionnement .fonctionnement__card .fonctionnement__info i {
+    font-size: 19px;
+    margin-right: 24px;
+  }
 }
 .fonctionnement .fonctionnement__card .fonctionnement__info .fonctionnement__infoTitle {
   margin: 0;
   font-size: 13px;
   font-weight: 600;
+}
+@media (min-width: 767px) {
+  .fonctionnement .fonctionnement__card .fonctionnement__info .fonctionnement__infoTitle {
+    font-size: 16px;
+  }
+}
+@media (min-width: 767px) {
+  .fonctionnement .fonctionnement__card {
+    width: 24%;
+  }
 }
 .fonctionnement .fonctionnement__card__blue {
   display: flex;
@@ -140,6 +216,11 @@ footer p {
   font-size: 26px;
   color: #9356DC;
 }
+@media (min-width: 767px) {
+  .fonctionnement .fonctionnement__card__blue .fonctionnement__number {
+    font-size: 30px;
+  }
+}
 .fonctionnement .fonctionnement__card__blue .fonctionnement__info {
   display: flex;
   flex-direction: row;
@@ -150,6 +231,11 @@ footer p {
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
+@media (min-width: 767px) {
+  .fonctionnement .fonctionnement__card__blue .fonctionnement__info {
+    height: 30px;
+  }
+}
 .fonctionnement .fonctionnement__card__blue .fonctionnement__info i {
   margin-right: 15px;
   color: #9356DC;
@@ -158,6 +244,25 @@ footer p {
   margin: 0;
   font-size: 13px;
   font-weight: 600;
+}
+@media (min-width: 767px) {
+  .fonctionnement .fonctionnement__card__blue .fonctionnement__info .fonctionnement__infoTitle {
+    font-size: 16px;
+  }
+}
+@media (min-width: 767px) {
+  .fonctionnement .fonctionnement__card__blue {
+    width: 24%;
+  }
+}
+@media (min-width: 767px) {
+  .fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 20px 15px 30px 12%;
+  }
 }
 
 /*----------Sass section Restaurants Cards------------*/
@@ -170,17 +275,33 @@ footer p {
   font-weight: 800;
   margin-bottom: 16px;
 }
+@media (min-width: 767px) {
+  .restaurants .restaurants__title {
+    width: 100%;
+    font-size: 24px;
+  }
+}
 .restaurants .restaurants__cards {
   background-color: white;
   margin-bottom: 20px;
   border-radius: 15px;
+}
+@media (min-width: 767px) {
+  .restaurants .restaurants__cards {
+    width: 38%;
+    margin-right: 8%;
+  }
 }
 .restaurants .restaurants__cards img {
   height: 140px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
-  object-position: bottom;
+}
+@media (min-width: 767px) {
+  .restaurants .restaurants__cards img {
+    height: 170px;
+  }
 }
 .restaurants .restaurants__cards .restaurants__cardsContent {
   display: flex;
@@ -204,6 +325,14 @@ footer p {
   margin: -5px 0;
   width: 100%;
 }
+@media (min-width: 767px) {
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px 0 0 12%;
+  }
+}
 
 /*----------Sass du header------------*/
 .hero {
@@ -220,7 +349,7 @@ footer p {
   background-color: #F6F6F6;
   position: relative;
   border-radius: 35px;
-  margin-top: -30px;
+  margin-top: -34px;
   padding: 26px 12px;
 }
 .menu__section .menu__section__title {
@@ -304,6 +433,14 @@ footer p {
   background: linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   cursor: pointer;
+}
+@media (min-width: 767px) {
+  .cta__button {
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+    padding: 0px 22px;
+  }
 }
 
 body {
