@@ -44,6 +44,22 @@ footer ul li img {
   height: 11px;
   margin-right: 7px;
 }
+@media (min-width: 767px) {
+  footer ul li img {
+    height: 14px;
+  }
+}
+@media (min-width: 767px) {
+  footer ul li {
+    font-size: 15px;
+    margin-right: 25px;
+  }
+}
+@media (min-width: 767px) {
+  footer ul {
+    display: flex;
+  }
+}
 footer p {
   font-family: Shrikhand;
   font-size: 15px;
@@ -52,6 +68,20 @@ footer p {
   line-height: normal;
   margin-bottom: 12px;
 }
+@media (min-width: 767px) {
+  footer p {
+    display: flex;
+    font-size: 17px;
+    margin: 0 0 0 70px;
+  }
+}
+@media (min-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px 70px 30px 20px;
+  }
+}
 
 /*----------Sass du header (header dans les layouts)------------*/
 /*----------Sass Location------------*/
@@ -59,7 +89,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 13px;
 }
 .location i {
@@ -156,7 +186,7 @@ footer p {
   position: relative;
   margin: 0 -12px 0 0;
   font-size: 26px;
-  color: #9356DC;
+  color: #9356dc;
 }
 @media (min-width: 767px) {
   .fonctionnement .fonctionnement__card .fonctionnement__number {
@@ -214,7 +244,7 @@ footer p {
   position: relative;
   margin: 0 -12px 0 0;
   font-size: 26px;
-  color: #9356DC;
+  color: #9356dc;
 }
 @media (min-width: 767px) {
   .fonctionnement .fonctionnement__card__blue .fonctionnement__number {
@@ -238,7 +268,7 @@ footer p {
 }
 .fonctionnement .fonctionnement__card__blue .fonctionnement__info i {
   margin-right: 15px;
-  color: #9356DC;
+  color: #9356dc;
 }
 .fonctionnement .fonctionnement__card__blue .fonctionnement__info .fonctionnement__infoTitle {
   margin: 0;
@@ -260,7 +290,6 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
     padding: 20px 15px 30px 12%;
   }
 }
@@ -326,6 +355,11 @@ footer p {
   height: 18px;
   padding-top: 14px;
 }
+@media (min-width: 767px) {
+  .restaurants .restaurants__cards .restaurants__cardsContent i {
+    font-size: 24px;
+  }
+}
 .restaurants .restaurants__cards .restaurants__cardsContent p {
   font-size: 14px;
   font-weight: 300;
@@ -333,11 +367,21 @@ footer p {
   width: 100%;
 }
 @media (min-width: 767px) {
+  .restaurants .restaurants__cards .restaurants__cardsContent p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 767px) {
+  .restaurants .restaurants__cards .restaurants__cardsContent {
+    padding: 0 24px 20px 20px;
+  }
+}
+@media (min-width: 767px) {
   .restaurants {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 10px 0 0 12%;
+    padding: 10px 0 10px 12%;
   }
 }
 
