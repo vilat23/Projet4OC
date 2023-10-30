@@ -1,24 +1,77 @@
 // SIMPLE HEADER WITH LOGO
 
-
-.logo {
+.header__home {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
-    padding: 11px 0 5px 0;
+    align-items: center;
     position: relative;
+    padding: 11px 0 5px 0;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 
-    .logo__siteLogo {
-        font-family: 'Shrikhand', serif;
-        font-size: 25px;
-        margin: 0;
-        @media (min-width:767px){
-            font-size: 36px;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+
+        .logo__siteLogo {
+            font-family: 'Shrikhand', serif;
+            font-size: 25px;
+            margin: 0;
+
+            @media (min-width:767px) {
+                font-size: 36px;
+            }
+        }
+
+        @media (min-width:767px) {
+            height: 82px;
+            align-items: center;
         }
     }
-    @media (min-width:767px){
-        height: 82px;
+}
+
+// HEADER WITH LEFT ARROW FOR RESTAURANT PAGES
+
+.header__restaurants {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 11px 0 5px 0;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+
+    .left__arrow {
+
+        margin: 0;
+
+        i {
+            font-size: 20px;
+
+        }
+    }
+
+    .logo {
+        display: flex;
         align-items: center;
+
+
+        .logo__siteLogo {
+            font-family: 'Shrikhand', serif;
+            font-size: 25px;
+            margin: 0;
+            padding: 0 60px 0 42px;
+
+            @media (min-width:767px) {
+                font-size: 36px;
+            }
+        }
+
+        @media (min-width:767px) {
+            height: 82px;
+
+
+        }
     }
 }
