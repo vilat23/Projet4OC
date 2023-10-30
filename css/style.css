@@ -470,15 +470,35 @@ footer p {
   width: 100%;
   margin: 0;
 }
+@media (min-width: 767px) {
+  .menu__section .menu__section__content__item h3 {
+    font-size: 18px;
+  }
+}
 .menu__section .menu__section__content__item p {
   font-size: 12px;
   font-weight: 300;
   margin: 5px 0 0 0;
 }
+@media (min-width: 767px) {
+  .menu__section .menu__section__content__item p {
+    font-size: 14px;
+  }
+}
 .menu__section .menu__section__content__item .menu__section__content__item__price {
   font-size: 12px;
   font-weight: 600;
   margin: 5px 0 0 0px;
+}
+@media (min-width: 767px) {
+  .menu__section .menu__section__content__item .menu__section__content__item__price {
+    font-size: 14px;
+  }
+}
+@media (min-width: 767px) {
+  .menu__section .menu__section__content__item {
+    padding: 14px;
+  }
 }
 @media (min-width: 767px) {
   .menu__section {

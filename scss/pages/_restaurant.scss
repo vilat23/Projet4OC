@@ -93,18 +93,34 @@
             font-weight: 500;
             width: 100%;
             margin: 0;
+
+            @media (min-width:767px) {
+                font-size: 18px;
+            }
         }
 
         p {
             font-size: 12px;
             font-weight: 300;
             margin: 5px 0 0 0;
+
+            @media (min-width:767px) {
+                font-size: 14px;
+            }
         }
 
         .menu__section__content__item__price {
             font-size: 12px;
             font-weight: 600;
             margin: 5px 0 0 0px;
+
+            @media (min-width:767px) {
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width:767px) {
+            padding: 14px;
         }
 
     }
