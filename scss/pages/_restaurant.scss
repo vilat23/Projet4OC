@@ -60,20 +60,30 @@
 
         /*-----Animations d'entrées-----*/
 
-        .starts__dishes {
-            animation: fadein 2s;
+        .starts__dishes { 
+            animation: fadein 2000ms;
+        }
 
-            @keyframes fadein {
-                from {
-                    opacity: 0;
-                }
+        .main__dishes { 
+            animation: fadein 3500ms;
+        }
 
-                to {
-                    opacity: 1;
-                }
+        .dessert__dishes { 
+            animation: fadein 4000ms;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
             }
         }
+
         /*-----Fin des animations d'entrées-----*/
+        
         h2 {
             font-size: 13px;
             font-weight: 300;

@@ -565,7 +565,13 @@ footer p {
   /*-----Fin des animations d'entrées-----*/
 }
 .menu__section .menu__section__content .starts__dishes {
-  animation: fadein 2s;
+  animation: fadein 2000ms;
+}
+.menu__section .menu__section__content .main__dishes {
+  animation: fadein 3500ms;
+}
+.menu__section .menu__section__content .dessert__dishes {
+  animation: fadein 4000ms;
 }
 @keyframes fadein {
   from {
