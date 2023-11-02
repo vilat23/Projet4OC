@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header__home {
   width: 100%;
   display: flex;
@@ -509,7 +510,7 @@ footer p {
   }
 }
 
-/*----------Sass du header------------*/
+/*----------Sass du header --> layout/header.scss------------*/
 .hero {
   padding: 0;
   width: 100%;
@@ -560,6 +561,19 @@ footer p {
 }
 .menu__section .menu__section__content {
   padding: 11px 0 0 0;
+  /*-----Animations d'entrées-----*/
+  /*-----Fin des animations d'entrées-----*/
+}
+.menu__section .menu__section__content .starts__dishes {
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .menu__section .menu__section__content h2 {
   font-size: 13px;
@@ -571,7 +585,7 @@ footer p {
   width: 32px;
   height: 3px;
   margin-top: 5px;
-  background: #99E2D0;
+  background: #99e2d0;
 }
 @media (min-width: 767px) {
   .menu__section .menu__section__content h2 {
@@ -589,48 +603,81 @@ footer p {
 .menu__section .menu__section__content__item {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   background-color: white;
   border-radius: 15px;
-  padding: 11px;
+  padding: 0 0 0 11px;
   margin-bottom: 10px;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 }
-.menu__section .menu__section__content__item h3 {
-  font-size: 15px;
+.menu__section .menu__section__content__item .menu__section__content__title {
+  padding: 11px 0 11px 0;
+  width: 180px;
+}
+.menu__section .menu__section__content__item .menu__section__content__title h3 {
+  font-size: 14px;
   font-weight: 500;
-  width: 100%;
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 @media (min-width: 767px) {
-  .menu__section .menu__section__content__item h3 {
+  .menu__section .menu__section__content__item .menu__section__content__title h3 {
     font-size: 18px;
   }
 }
-.menu__section .menu__section__content__item p {
+.menu__section .menu__section__content__item .menu__section__content__title p {
   font-size: 12px;
   font-weight: 300;
   margin: 5px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 @media (min-width: 767px) {
-  .menu__section .menu__section__content__item p {
+  .menu__section .menu__section__content__item .menu__section__content__title p {
     font-size: 14px;
   }
 }
-.menu__section .menu__section__content__item .menu__section__content__item__price {
+.menu__section .menu__section__content__item .menu__section__content__price {
+  display: flex;
+  align-items: end;
+  padding: 0 11px 11px 0;
+}
+.menu__section .menu__section__content__item .menu__section__content__price .menu__section__content__item__price {
   font-size: 12px;
   font-weight: 600;
   margin: 5px 0 0 0px;
 }
 @media (min-width: 767px) {
-  .menu__section .menu__section__content__item .menu__section__content__item__price {
+  .menu__section .menu__section__content__item .menu__section__content__price .menu__section__content__item__price {
     font-size: 14px;
   }
 }
-@media (min-width: 767px) {
-  .menu__section .menu__section__content__item {
-    padding: 14px;
-  }
+.menu__section .menu__section__content__item .restaurant__menu__checkbox {
+  background: #99e2d0;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 0 15px 15px 0;
+  -webkit-border-radius: 0 15px 15px 0;
+  -moz-border-radius: 0 15px 15px 0;
+  -ms-border-radius: 0 15px 15px 0;
+  -o-border-radius: 0 15px 15px 0;
+}
+.menu__section .menu__section__content__item .menu-checkbox .checked,
+.menu__section .menu__section__content__item .menu-checkbox .unchecked {
+  color: white;
+}
+.menu__section .menu__section__content__item .menu-checkbox input[type=checkbox],
+.menu__section .menu__section__content__item .menu-checkbox .checked {
+  display: none;
+}
+.menu__section .menu__section__content__item .menu-checkbox input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+}
+.menu__section .menu__section__content__item .menu-checkbox input[type=checkbox]:checked ~ .unchecked {
+  display: none;
 }
 @media (min-width: 767px) {
   .menu__section {

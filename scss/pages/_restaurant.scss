@@ -1,33 +1,31 @@
-/*----------Sass du header------------*/
+/*----------Sass du header --> layout/header.scss------------*/
 
-
-
+// HERO
 .hero {
     padding: 0;
     width: 100%;
 
     img {
-
         width: 100%;
         object-fit: cover;
 
-        @media (min-width:767px) {
+        @media (min-width: 767px) {
             height: 350px;
             object-position: center;
         }
-
     }
 }
 
 /*----------Sass de la section Menu------------*/
 
 .menu__section {
-
     background-color: $section-grey-bkg;
     position: relative;
     border-radius: 35px;
     margin-top: -34px;
     padding: 26px 12px;
+
+    // ENTETE DE LA SECTION
 
     .menu__section__title {
         display: flex;
@@ -36,11 +34,11 @@
 
         h1 {
             font-size: 23px;
-            font-family: 'Shrikhand', serif;
+            font-family: "Shrikhand", serif;
             font-weight: 400;
             margin: 0;
 
-            @media (min-width:767px) {
+            @media (min-width: 767px) {
                 font-size: 27px;
             }
         }
@@ -49,16 +47,33 @@
             font-size: 18px;
             margin-left: 25px;
 
-            @media (min-width:767px) {
+            @media (min-width: 767px) {
                 font-size: 23px;
             }
         }
     }
 
-    .menu__section__content {
+    // CONTENU DE LA SECTION
 
+    .menu__section__content {
         padding: 11px 0 0 0;
 
+        /*-----Animations d'entrées-----*/
+
+        .starts__dishes {
+            animation: fadein 2s;
+
+            @keyframes fadein {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+        }
+        /*-----Fin des animations d'entrées-----*/
         h2 {
             font-size: 13px;
             font-weight: 300;
@@ -69,16 +84,15 @@
                 width: 32px;
                 height: 3px;
                 margin-top: 5px;
-                background: #99E2D0;
+                background: #99e2d0;
             }
 
-            @media (min-width:767px) {
-
+            @media (min-width: 767px) {
                 font-size: 15px;
             }
         }
 
-        @media (min-width:767px) {
+        @media (min-width: 767px) {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -87,54 +101,104 @@
     }
 
     .menu__section__content__item {
-
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         background-color: white;
         border-radius: 15px;
-        padding: 11px;
+        padding: 0 0 0 11px;
         margin-bottom: 10px;
-        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 
-        h3 {
-            font-size: 15px;
-            font-weight: 500;
-            width: 100%;
-            margin: 0;
+        .menu__section__content__title {
+            padding: 11px 0 11px 0;
+            width: 180px;
 
-            @media (min-width:767px) {
-                font-size: 18px;
-            }
-        }
-
-        p {
-            font-size: 12px;
-            font-weight: 300;
-            margin: 5px 0 0 0;
-
-            @media (min-width:767px) {
+            h3 {
                 font-size: 14px;
+                font-weight: 500;
+                margin: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+
+                @media (min-width: 767px) {
+                    font-size: 18px;
+                }
+            }
+
+            p {
+                font-size: 12px;
+                font-weight: 300;
+                margin: 5px 0 0 0;
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                @media (min-width: 767px) {
+                    font-size: 14px;
+                }
             }
         }
 
-        .menu__section__content__item__price {
-            font-size: 12px;
-            font-weight: 600;
-            margin: 5px 0 0 0px;
+        .menu__section__content__price {
+            display: flex;
+            align-items: end;
+            padding: 0 11px 11px 0;
 
-            @media (min-width:767px) {
-                font-size: 14px;
+            .menu__section__content__item__price {
+                font-size: 12px;
+                font-weight: 600;
+                margin: 5px 0 0 0px;
+
+
+                @media (min-width: 767px) {
+                    font-size: 14px;
+                }
             }
         }
 
-        @media (min-width:767px) {
-            padding: 14px;
+        // Dev de la checkbox
+        .restaurant__menu__checkbox {
+            background: #99e2d0;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 0 15px 15px 0;
+            -webkit-border-radius: 0 15px 15px 0;
+            -moz-border-radius: 0 15px 15px 0;
+            -ms-border-radius: 0 15px 15px 0;
+            -o-border-radius: 0 15px 15px 0;
+
         }
 
+        .menu-checkbox {
+
+            .checked,
+            .unchecked {
+                color: white;
+            }
+
+            input[type="checkbox"],
+            .checked {
+                display: none;
+            }
+
+            input[type="checkbox"]:checked~.checked {
+                display: inline-block;
+            }
+
+            input[type="checkbox"]:checked~.unchecked {
+                display: none;
+            }
+        }
+
+        // End dev checkbox
+
+        @media (min-width: 767px) {}
     }
 
-    @media (min-width:767px) {
+    @media (min-width: 767px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -148,21 +212,16 @@
 
 /*----------Sass de la section order CTA------------*/
 .order__cta {
-
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px 0 10px 0;
 
     .cta__button {
-
         padding: 20px 40px;
     }
-
 }
 
-
 /*----------Sass section Footer -> layouts/_footer.scss------------*/
-
 
 /*# sourceMappingURL=menu.css.map */
