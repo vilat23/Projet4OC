@@ -121,7 +121,8 @@
 
         .menu__section__content__title {
             padding: 11px 0 11px 0;
-            width: 180px;
+            overflow: hidden;
+            flex-basis: 100%;
 
             h3 {
                 font-size: 14px;
