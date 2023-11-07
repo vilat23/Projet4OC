@@ -191,7 +191,7 @@ footer p {
   margin: 0 -26px 0 -19px;
   height: 80px;
 }
-.loader .loader__content .loader__logo {
+.loader .loader__content .loader__text__logo .loader__logo {
   margin: -45px 0 0 0;
   width: 100%;
   font-family: "Shrikhand", serif;

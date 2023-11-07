@@ -96,15 +96,17 @@
 
         }
 
-        .loader__logo {
-            //position: absolute;
-            //top: 490px;
-            margin: -45px 0 0 0;
-            width: 100%;
-            font-family: 'Shrikhand', serif;
-            font-size: 17px;
-            //text-align: center;
+        .loader__text__logo {
+            .loader__logo {
+                //position: absolute;
+                //top: 490px;
+                margin: -45px 0 0 0;
+                width: 100%;
+                font-family: 'Shrikhand', serif;
+                font-size: 17px;
+                //text-align: center;
 
+            }
         }
 
     }
