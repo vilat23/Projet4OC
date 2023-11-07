@@ -1,8 +1,9 @@
 .loader {
     height: 100vh;
     width: 100%;
+    background: #f3f3f3;
 
-    
+
     opacity: 0;
     animation: loading 3200ms 5ms ease-in forwards;
 
@@ -24,6 +25,7 @@
 
     .loader__content {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -38,11 +40,11 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            height: 100%;
+            //height: 100%;
             width: 100%;
 
 
-            background: #f3f3f3;
+
 
             .loader__o {
                 margin: 0;
@@ -91,17 +93,18 @@
 
             }
 
-            .loader__logo {
-                position: absolute;
-                top: 490px;
-                margin: 0;
-                width: 100%;
-                font-family: 'Shrikhand', serif;
-                font-size: 17px;
-                text-align: center;
 
+        }
 
-            }
+        .loader__logo {
+            //position: absolute;
+            //top: 490px;
+            margin: -45px 0 0 0;
+            width: 100%;
+            font-family: 'Shrikhand', serif;
+            font-size: 17px;
+            //text-align: center;
+
         }
 
     }

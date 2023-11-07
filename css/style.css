@@ -128,6 +128,7 @@ footer p {
 .loader {
   height: 100vh;
   width: 100%;
+  background: #f3f3f3;
   opacity: 0;
   animation: loading 3200ms 5ms ease-in forwards;
 }
@@ -145,6 +146,7 @@ footer p {
 }
 .loader .loader__content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -155,9 +157,7 @@ footer p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: 100%;
-  background: #f3f3f3;
   /* Animation du loader_letter */
   /* ----------------------------------------- */
 }
@@ -191,14 +191,11 @@ footer p {
   margin: 0 -26px 0 -19px;
   height: 80px;
 }
-.loader .loader__content .loader__content__items .loader__logo {
-  position: absolute;
-  top: 490px;
-  margin: 0;
+.loader .loader__content .loader__logo {
+  margin: -45px 0 0 0;
   width: 100%;
   font-family: "Shrikhand", serif;
   font-size: 17px;
-  text-align: center;
 }
 
 /*----------Sass du header (header dans les layouts)------------*/
