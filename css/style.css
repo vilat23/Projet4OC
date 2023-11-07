@@ -185,7 +185,6 @@ footer p {
     -moz-transform: rotateY(360deg);
     -ms-transform: rotateY(360deg);
     -o-transform: rotateY(360deg);
-    display: none;
   }
 }
 .loader .loader__content .loader__content__items .loader__icon {
