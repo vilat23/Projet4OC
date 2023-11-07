@@ -60,31 +60,33 @@
 
         /*-----Animations d'entrées-----*/
 
-        .starts__dishes { 
-            animation-delay: 3s;
-            animation: fadein 2000ms;
+        .starts__dishes {
+            opacity: 0;
+            animation: fadein 1300ms 1000ms ease-in forwards;
         }
 
-        .main__dishes { 
-            animation: fadein 3500ms;
+        .main__dishes {
+            opacity: 0;
+            animation: fadein 1300ms 1500ms ease-in forwards;
         }
 
-        .dessert__dishes { 
-            animation: fadein 4000ms;
+        .dessert__dishes {
+            opacity: 0;
+            animation: fadein 1300ms 2000ms ease-in forwards;
         }
 
         @keyframes fadein {
-            from {
+            0% {
                 opacity: 0;
             }
 
-            to {
+            100% {
                 opacity: 1;
             }
         }
 
         /*-----Fin des animations d'entrées-----*/
-        
+
         h2 {
             font-size: 13px;
             font-weight: 300;
@@ -97,6 +99,7 @@
                 margin-top: 5px;
                 background: #99e2d0;
             }
+
 
             @media (min-width: 767px) {
                 font-size: 15px;
@@ -113,17 +116,23 @@
 
     .menu__section__content__item {
         display: flex;
-        
+        overflow: hidden;
         background-color: white;
         border-radius: 15px;
         padding: 0 0 0 11px;
         margin-bottom: 10px;
         box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 
+        :hover+.restaurant__menu__checkbox {
+            transform: translate(-100%, 0);
+        }
+
+
         .menu__section__content__title {
             padding: 11px 0 11px 0;
             overflow: hidden;
             flex-basis: 100%;
+
 
             h3 {
                 font-size: 14px;
@@ -132,6 +141,8 @@
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
+
+
 
                 @media (min-width: 767px) {
                     font-size: 18px;
@@ -142,10 +153,11 @@
                 font-size: 12px;
                 font-weight: 300;
                 margin: 5px 0 0 0;
-
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+
+
 
                 @media (min-width: 767px) {
                     font-size: 14px;
@@ -158,10 +170,16 @@
             align-items: end;
             padding: 0 11px 11px 0;
 
+
+
+
+
+
             .menu__section__content__item__price {
                 font-size: 12px;
                 font-weight: 600;
                 margin: 5px 0 0 0px;
+
 
 
                 @media (min-width: 767px) {
@@ -177,10 +195,9 @@
             align-items: center;
             padding: 15px;
             border-radius: 0 15px 15px 0;
-            -webkit-border-radius: 0 15px 15px 0;
-            -moz-border-radius: 0 15px 15px 0;
-            -ms-border-radius: 0 15px 15px 0;
-            -o-border-radius: 0 15px 15px 0;
+            margin-right: -46px;
+            transition: transform 330ms ease-in-out;
+
 
         }
 
@@ -204,6 +221,15 @@
                 display: none;
             }
         }
+
+        // ANIMATION DE LA CHECKBOX
+
+
+
+
+        // END ANIMATION DE LA CHECKBOX
+
+
 
         // End dev checkbox
 
