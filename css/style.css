@@ -565,6 +565,7 @@ footer p {
   /*-----Fin des animations d'entrées-----*/
 }
 .menu__section .menu__section__content .starts__dishes {
+  animation-delay: 3s;
   animation: fadein 2000ms;
 }
 .menu__section .menu__section__content .main__dishes {
@@ -608,7 +609,6 @@ footer p {
 }
 .menu__section .menu__section__content__item {
   display: flex;
-  justify-content: space-between;
   background-color: white;
   border-radius: 15px;
   padding: 0 0 0 11px;
@@ -617,7 +617,8 @@ footer p {
 }
 .menu__section .menu__section__content__item .menu__section__content__title {
   padding: 11px 0 11px 0;
-  width: 180px;
+  overflow: hidden;
+  flex-basis: 100%;
 }
 .menu__section .menu__section__content__item .menu__section__content__title h3 {
   font-size: 14px;

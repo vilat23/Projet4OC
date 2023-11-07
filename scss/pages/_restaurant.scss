@@ -61,6 +61,7 @@
         /*-----Animations d'entrées-----*/
 
         .starts__dishes { 
+            animation-delay: 3s;
             animation: fadein 2000ms;
         }
 
@@ -112,7 +113,7 @@
 
     .menu__section__content__item {
         display: flex;
-        justify-content: space-between;
+        
         background-color: white;
         border-radius: 15px;
         padding: 0 0 0 11px;
