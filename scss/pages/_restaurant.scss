@@ -100,7 +100,6 @@
                 background: #99e2d0;
             }
 
-
             @media (min-width: 767px) {
                 font-size: 15px;
             }
@@ -124,10 +123,9 @@
         margin-bottom: 10px;
         box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 
-        :hover+.restaurant__menu__checkbox {
-
+        :active+.restaurant__menu__checkbox {
+            cursor: pointer;
             margin-right: 46px;
-
         }
 
 
@@ -137,9 +135,6 @@
             width: 100%;
             flex-basis: 100%;
 
-
-
-
             h3 {
                 font-size: 14px;
                 font-weight: 500;
@@ -147,8 +142,6 @@
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
-
-
 
                 @media (min-width: 767px) {
                     font-size: 18px;
@@ -163,8 +156,6 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
 
-
-
                 @media (min-width: 767px) {
                     font-size: 14px;
                 }
@@ -177,12 +168,10 @@
             padding: 0 11px 11px 0;
             margin-right: -45px;
 
-
             .menu__section__content__item__price {
                 font-size: 12px;
                 font-weight: 600;
                 margin: 5px 0 0 0px;
-
 
                 @media (min-width: 767px) {
                     font-size: 14px;
@@ -223,17 +212,6 @@
                 display: none;
             }
         }
-
-        // ANIMATION DE LA CHECKBOX
-
-
-
-
-
-
-        // END ANIMATION DE LA CHECKBOX
-
-
 
         // End dev checkbox
 
