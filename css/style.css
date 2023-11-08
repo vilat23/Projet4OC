@@ -126,6 +126,7 @@ footer p {
 }
 
 .loader {
+  display: flex;
   height: 100vh;
   width: 100%;
   background: #f3f3f3;
@@ -196,6 +197,7 @@ footer p {
   width: 100%;
   font-family: "Shrikhand", serif;
   font-size: 17px;
+  text-align: center;
 }
 
 /*----------Sass du header (header dans les layouts)------------*/
