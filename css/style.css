@@ -508,7 +508,6 @@ footer p {
   margin-top: 10px;
   background-image: url(/assets/images/icons/coeur_vide.png);
   background-repeat: no-repeat;
-  transition: background-image 0.6s;
 }
 .restaurants .restaurants__cards .restaurants__cardsContent .heart_icon:hover {
   background-image: url(/assets/images/icons/coeur_rempli.png);
