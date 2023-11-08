@@ -126,7 +126,11 @@ footer p {
 }
 
 .loader {
-  display: flex;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
   height: 100vh;
   width: 100%;
   background: #fdfdfd;
@@ -136,6 +140,7 @@ footer p {
 @keyframes loading {
   0% {
     opacity: 1;
+    overflow: hidden;
   }
   80% {
     opacity: 1;
@@ -143,6 +148,7 @@ footer p {
   100% {
     opacity: 0.5;
     display: none;
+    overflow: auto;
   }
 }
 .loader .loader__content {
@@ -507,13 +513,13 @@ footer p {
   height: 17px;
   margin-top: 15px;
   padding-right: 15px;
-  background-image: url(/assets/images/icons/coeur_vide.png);
+  background-image: url(./../assets/images/icons/coeur_vide.png);
   background-repeat: no-repeat;
   background-size: contain;
   transition: background-image 0.6s;
 }
 .restaurants .restaurants__cards .restaurants__cardsContent .heart_icon:hover {
-  background-image: url(/assets/images/icons/coeur_rempli.png);
+  background-image: url(./../assets/images/icons/coeur_rempli.png);
 }
 @media (min-width: 767px) {
   .restaurants .restaurants__cards .restaurants__cardsContent .heart_icon {
@@ -656,10 +662,6 @@ footer p {
   margin-bottom: 10px;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 }
-.menu__section .menu__section__content__item :active + .restaurant__menu__checkbox {
-  cursor: pointer;
-  margin-right: 46px;
-}
 .menu__section .menu__section__content__item .menu__section__content__title {
   padding: 11px 0 11px 0;
   overflow: hidden;
@@ -743,6 +745,13 @@ footer p {
     margin: -40px auto 0px auto;
     border-radius: 35px 35px 0 0;
   }
+}
+
+.menu__section__content__item:hover {
+  cursor: pointer;
+}
+.menu__section__content__item:hover .restaurant__menu__checkbox {
+  margin-right: 46px;
 }
 
 /*----------Sass de la section order CTA------------*/

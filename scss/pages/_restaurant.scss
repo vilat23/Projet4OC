@@ -123,11 +123,6 @@
         margin-bottom: 10px;
         box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 
-        :active+.restaurant__menu__checkbox {
-            cursor: pointer;
-            margin-right: 46px;
-        }
-
 
         .menu__section__content__title {
             padding: 11px 0 11px 0;
@@ -227,6 +222,14 @@
         padding: 50px 0 30px 0;
         margin: -40px auto 0px auto;
         border-radius: 35px 35px 0 0;
+    }
+}
+
+// ANIMATION DE LA CHECKBOX VERTE
+.menu__section__content__item:hover {
+    cursor: pointer;
+    .restaurant__menu__checkbox {
+        margin-right: 46px;
     }
 }
 
