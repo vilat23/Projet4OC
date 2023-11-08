@@ -56,7 +56,7 @@
     // CONTENU DE LA SECTION
 
     .menu__section__content {
-        padding: 11px 0 0 0;
+        padding: 11px 10px 0 0;
 
         /*-----Animations d'entrées-----*/
 
@@ -116,6 +116,7 @@
 
     .menu__section__content__item {
         display: flex;
+        width: 100%;
         overflow: hidden;
         background-color: white;
         border-radius: 15px;
@@ -131,7 +132,10 @@
         .menu__section__content__title {
             padding: 11px 0 11px 0;
             overflow: hidden;
+            width: 100%;
             flex-basis: 100%;
+
+
 
 
             h3 {
@@ -171,15 +175,10 @@
             padding: 0 11px 11px 0;
 
 
-
-
-
-
             .menu__section__content__item__price {
                 font-size: 12px;
                 font-weight: 600;
                 margin: 5px 0 0 0px;
-
 
 
                 @media (min-width: 767px) {
@@ -195,14 +194,11 @@
             align-items: center;
             padding: 15px;
             border-radius: 0 15px 15px 0;
-            margin-right: -46px;
-            transition: transform 330ms ease-in-out;
-
-
+            //margin-right: -46px;
+            transition: transform 500ms ease-in-out;
         }
 
         .menu-checkbox {
-
             .checked,
             .unchecked {
                 color: white;
@@ -223,6 +219,8 @@
         }
 
         // ANIMATION DE LA CHECKBOX
+
+
 
 
 

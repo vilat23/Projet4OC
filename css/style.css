@@ -453,6 +453,7 @@ footer p {
 }
 .restaurants .restaurants__cards .restaurants__cards__new__tag {
   display: flex;
+  height: 20px;
   position: absolute;
   top: 10px;
   right: 0px;
@@ -478,6 +479,16 @@ footer p {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px 10px 18px 10px;
+  /* i {
+      height: 18px;
+      padding-top: 14px;
+
+
+      @media (min-width: 767px) {
+          font-size: 24px;
+      }
+  }
+  */
 }
 .restaurants .restaurants__cards .restaurants__cardsContent h3 {
   font-size: 15px;
@@ -491,19 +502,27 @@ footer p {
     font-weight: 600;
   }
 }
-.restaurants .restaurants__cards .restaurants__cardsContent i {
-  height: 18px;
-  padding-top: 14px;
+.restaurants .restaurants__cards .restaurants__cardsContent .heart_icon {
+  width: 24px;
+  height: 22px;
+  margin-top: 10px;
+  background-image: url(/assets/images/icons/coeur_vide.png);
+  background-repeat: no-repeat;
+  transition: background-image 0.6s;
+}
+.restaurants .restaurants__cards .restaurants__cardsContent .heart_icon:hover {
+  background-image: url(/assets/images/icons/coeur_rempli.png);
 }
 @media (min-width: 767px) {
-  .restaurants .restaurants__cards .restaurants__cardsContent i {
-    font-size: 24px;
+  .restaurants .restaurants__cards .restaurants__cardsContent .heart_icon {
+    height: 30px;
+    width: 30px;
   }
 }
 .restaurants .restaurants__cards .restaurants__cardsContent p {
   font-size: 14px;
   font-weight: 300;
-  margin: -5px 0;
+  margin: 0px 0;
   width: 100%;
 }
 @media (min-width: 767px) {
@@ -575,7 +594,7 @@ footer p {
   }
 }
 .menu__section .menu__section__content {
-  padding: 11px 0 0 0;
+  padding: 11px 10px 0 0;
   /*-----Animations d'entrées-----*/
   /*-----Fin des animations d'entrées-----*/
 }
@@ -626,6 +645,7 @@ footer p {
 }
 .menu__section .menu__section__content__item {
   display: flex;
+  width: 100%;
   overflow: hidden;
   background-color: white;
   border-radius: 15px;
@@ -639,6 +659,7 @@ footer p {
 .menu__section .menu__section__content__item .menu__section__content__title {
   padding: 11px 0 11px 0;
   overflow: hidden;
+  width: 100%;
   flex-basis: 100%;
 }
 .menu__section .menu__section__content__item .menu__section__content__title h3 {
@@ -688,8 +709,7 @@ footer p {
   align-items: center;
   padding: 15px;
   border-radius: 0 15px 15px 0;
-  margin-right: -46px;
-  transition: transform 330ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 .menu__section .menu__section__content__item .menu-checkbox .checked,
 .menu__section .menu__section__content__item .menu-checkbox .unchecked {
