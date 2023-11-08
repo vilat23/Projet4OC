@@ -125,7 +125,9 @@
         box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 
         :hover+.restaurant__menu__checkbox {
-            transform: translate(-100%, 0);
+
+            margin-right: 46px;
+
         }
 
 
@@ -173,6 +175,7 @@
             display: flex;
             align-items: end;
             padding: 0 11px 11px 0;
+            margin-right: -45px;
 
 
             .menu__section__content__item__price {
@@ -194,11 +197,14 @@
             align-items: center;
             padding: 15px;
             border-radius: 0 15px 15px 0;
-            //margin-right: -46px;
-            transition: transform 500ms ease-in-out;
+
+            position: relative;
+            right: -46px;
+            transition: all 0.8s ease;
         }
 
         .menu-checkbox {
+
             .checked,
             .unchecked {
                 color: white;
