@@ -67,12 +67,12 @@
 
         .main__dishes {
             opacity: 0;
-            animation: fadein 1300ms 1500ms ease-in forwards;
+            animation: fadein 1300ms 1800ms ease-in forwards;
         }
 
         .dessert__dishes {
             opacity: 0;
-            animation: fadein 1300ms 2000ms ease-in forwards;
+            animation: fadein 1300ms 2500ms ease-in forwards;
         }
 
         @keyframes fadein {
