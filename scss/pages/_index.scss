@@ -168,6 +168,10 @@
     background-color: $section-grey-bkg;
     padding-bottom: 48px;
 
+    a{
+        text-decoration: none;
+    }
+
     .search__title {
         margin: 30px 0 0 0;
         text-align: center;
@@ -343,6 +347,11 @@
 .restaurants {
     padding: 30px 14px;
     background-color: $section-grey-bkg;
+
+    a{
+        text-decoration: none;
+        color: #000;
+    }
 
     .restaurants__title {
         font-size: 20px;

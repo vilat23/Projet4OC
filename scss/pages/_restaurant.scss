@@ -32,6 +32,8 @@
         flex-wrap: wrap;
         align-items: center;
 
+       
+
         h1 {
             font-size: 23px;
             font-family: "Shrikhand", serif;
@@ -43,14 +45,21 @@
             }
         }
 
-        i {
+        .coeur{
+
+            background-image: url(/assets/images/icons/coeur_vide.png);
+            width: 18px;
+            height: 18px;
+        }
+        
+        /*i {
             font-size: 18px;
             margin-left: 25px;
 
             @media (min-width: 767px) {
                 font-size: 23px;
             }
-        }
+        }*/
     }
 
     // CONTENU DE LA SECTION
