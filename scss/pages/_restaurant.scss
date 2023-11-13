@@ -226,12 +226,14 @@
 }
 
 // ANIMATION DE LA CHECKBOX VERTE
+
 .menu__section__content__item:hover {
     cursor: pointer;
     .restaurant__menu__checkbox {
         margin-right: 46px;
     }
 }
+
 
 /*----------Sass de la section order CTA------------*/
 .order__cta {
