@@ -612,6 +612,13 @@ footer p {
   background-image: url(/assets/images/icons/coeur_vide.png);
   width: 18px;
   height: 18px;
+  margin-left: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.6s;
+}
+.menu__section .menu__section__title .coeur:hover {
+  background-image: url(/assets/images/icons/coeur_rempli.png);
 }
 .menu__section .menu__section__content {
   padding: 11px 10px 0 0;
@@ -777,7 +784,6 @@ footer p {
 }
 
 /*----------Sass section Footer -> layouts/_footer.scss------------*/
-
 .cta__button {
   display: flex;
   flex-direction: column;

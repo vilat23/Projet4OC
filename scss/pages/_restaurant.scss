@@ -50,6 +50,14 @@
             background-image: url(/assets/images/icons/coeur_vide.png);
             width: 18px;
             height: 18px;
+            margin-left: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: background-image 0.6s;
+
+            &:hover{
+                background-image: url(/assets/images/icons/coeur_rempli.png);
+            }
         }
         
         /*i {
@@ -258,4 +266,3 @@
 
 /*----------Sass section Footer -> layouts/_footer.scss------------*/
 
-/*# sourceMappingURL=menu.css.map */
