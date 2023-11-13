@@ -41,6 +41,9 @@
 .header__restaurants .left__arrow {
   margin: 0;
 }
+.header__restaurants .left__arrow a {
+  color: black;
+}
 .header__restaurants .left__arrow i {
   font-size: 20px;
 }
@@ -425,9 +428,15 @@ footer p {
   padding: 30px 14px;
   background-color: #F6F6F6;
 }
-.restaurants a {
+.restaurants .restaurants__cards__link {
   text-decoration: none;
-  color: #000;
+  color: #000000;
+}
+@media (min-width: 767px) {
+  .restaurants .restaurants__cards__link {
+    width: 38%;
+    margin-right: 8%;
+  }
 }
 .restaurants .restaurants__title {
   font-size: 20px;
@@ -449,7 +458,6 @@ footer p {
 }
 @media (min-width: 767px) {
   .restaurants .restaurants__cards {
-    width: 38%;
     margin-right: 8%;
   }
 }

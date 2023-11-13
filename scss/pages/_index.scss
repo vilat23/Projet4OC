@@ -348,9 +348,14 @@
     padding: 30px 14px;
     background-color: $section-grey-bkg;
 
-    a{
+    .restaurants__cards__link{
         text-decoration: none;
-        color: #000;
+        color: #000000;
+
+        @media (min-width: 767px) {
+            width: 38%;
+            margin-right: 8%;
+        }
     }
 
     .restaurants__title {
@@ -372,7 +377,7 @@
         position: relative;
 
         @media (min-width: 767px) {
-            width: 38%;
+            //width: 38%;
             margin-right: 8%;
         }
 
