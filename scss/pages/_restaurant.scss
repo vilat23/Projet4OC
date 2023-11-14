@@ -35,6 +35,10 @@
         align-items: center;
         padding-right: 6%;
 
+        @media (min-width: 767px) {
+            padding-right: 0;
+        }
+
         h1 {
             font-size: 23px;
             font-family: "Shrikhand", serif;
@@ -218,8 +222,6 @@
             }
         }
 
-        // End dev checkbox
-
         @media (min-width: 767px) {}
     }
 
@@ -244,6 +246,8 @@
         margin-right: 46px;
     }
 }
+        // End dev checkbox
+
 
 /*----------Sass de la section order CTA------------*/
 .order__cta {

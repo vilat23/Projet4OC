@@ -600,6 +600,11 @@ footer p {
   align-items: center;
   padding-right: 6%;
 }
+@media (min-width: 767px) {
+  .menu__section .menu__section__title {
+    padding-right: 0;
+  }
+}
 .menu__section .menu__section__title h1 {
   font-size: 23px;
   font-family: "Shrikhand", serif;
