@@ -1,3 +1,8 @@
+
+
+
+/*--------------LOADER-----------------*/
+
 .loader {
     //display: flex;
     overflow: hidden;
@@ -119,13 +124,14 @@
 
 }
 
-
+/*--------------END LOADER-----------------*/
 
 
 
 /*----------Sass du header (header dans les layouts)------------*/
 
-/*----------Sass Location------------*/
+
+/*----------Section Location------------*/
 
 .location {
     display: flex;
@@ -159,7 +165,8 @@
     }
 }
 
-/*----------Sass section Search------------*/
+/*----------Section Search------------*/
+
 .search {
     display: flex;
     flex-direction: column;
@@ -204,7 +211,7 @@
     }
 }
 
-/*----------Sass section Fonctionnement------------*/
+/*----------Section Fonctionnement------------*/
 
 .fonctionnement {
     padding: 20px 15px 36px 15px;
@@ -342,7 +349,7 @@
     }
 }
 
-/*----------Sass section Restaurants Cards------------*/
+/*----------Section Restaurants Cards------------*/
 
 .restaurants {
     padding: 30px 14px;
@@ -415,8 +422,6 @@
                 -ms-border-radius: 1px;
                 -o-border-radius: 1px;
             }
-
-
         }
 
         .restaurants__cardsContent {

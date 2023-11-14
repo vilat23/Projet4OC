@@ -1,6 +1,9 @@
+
+
+
 /*----------Sass du header --> layout/header.scss------------*/
 
-// HERO
+/*----------------------HERO---------------------------*/
 .hero {
     padding: 0;
     width: 100%;
@@ -17,7 +20,7 @@
     }
 }
 
-/*----------Sass de la section Menu------------*/
+/*----------Section Menu------------*/
 
 .menu__section {
     background-color: $section-grey-bkg;
@@ -189,6 +192,7 @@
         }
 
         // Dev de la checkbox
+
         .restaurant__menu__checkbox {
             background: #99e2d0;
             display: flex;
@@ -246,10 +250,11 @@
         margin-right: 46px;
     }
 }
-        // End dev checkbox
+// End dev checkbox
 
 
-/*----------Sass de la section order CTA------------*/
+/*----------Section order CTA------------*/
+
 .order__cta {
     display: flex;
     justify-content: center;
@@ -261,4 +266,4 @@
     }
 }
 
-/*----------Sass section Footer -> layouts/_footer.scss------------*/
+/*----------Section Footer -> layouts/_footer.scss------------*/
