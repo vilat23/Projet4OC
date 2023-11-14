@@ -502,16 +502,6 @@ footer p {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px 10px 14px 10px;
-  /* i {
-      height: 18px;
-      padding-top: 14px;
-
-
-      @media (min-width: 767px) {
-          font-size: 24px;
-      }
-  }
-  */
 }
 .restaurants .restaurants__cards .restaurants__cardsContent h3 {
   font-size: 15px;
