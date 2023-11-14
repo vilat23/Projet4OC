@@ -622,6 +622,11 @@ footer p {
 .menu__section .menu__section__title .coeur:hover {
   background-image: url(./../assets/images/icons/coeur_rempli.png);
 }
+@media (min-width: 767px) {
+  .menu__section .menu__section__title .coeur {
+    margin-left: 24px;
+  }
+}
 .menu__section .menu__section__content {
   padding: 11px 10px 0 0;
   /*-----Animations d'entrées-----*/

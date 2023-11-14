@@ -57,6 +57,10 @@
             &:hover {
                 background-image: url(./../assets/images/icons/coeur_rempli.png);
             }
+
+            @media (min-width: 767px) {
+                margin-left: 24px;
+            }
         }
     }
 
