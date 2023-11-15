@@ -211,7 +211,8 @@ footer p {
 }
 
 /*--------------END LOADER-----------------*/
-/*----------Sass du header (header dans les layouts)------------*/
+/*--------------LOADER -->Layouts/loader--*/
+/*----------Sass du header -->Layouts/header------------*/
 /*----------Section Location------------*/
 .location {
   display: flex;
