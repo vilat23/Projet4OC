@@ -3,9 +3,6 @@
 // IMPORT UTILS
 
 @import "./utils/variables";
-@import "./utils/mixins";
-@import "./utils/placeholders";
-
 
 // IMPORT LAYOUTS
 
@@ -24,7 +21,7 @@
 @import "./components/icons";
 
 
-// SASS BASE BODY
+// BASE BODY
 
 body {
     margin: 0;
