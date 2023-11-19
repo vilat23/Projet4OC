@@ -30,7 +30,6 @@
 }
 
 .header__restaurants {
-  width: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -55,7 +54,6 @@
   font-family: "Shrikhand", serif;
   font-size: 25px;
   margin: 0;
-  padding: 0 55px 0 0;
 }
 @media (min-width: 767px) {
   .header__restaurants .logo .logo__siteLogo {

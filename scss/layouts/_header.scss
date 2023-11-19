@@ -33,10 +33,9 @@
 // HEADER WITH LEFT ARROW FOR RESTAURANT PAGES
 
 .header__restaurants {
-    width: 100%;
+
     display: flex;
     align-items: center;
-    //justify-content: center;
     position: relative;
     padding: 11px 0 5px 20px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
@@ -63,7 +62,6 @@
             font-family: 'Shrikhand', serif;
             font-size: 25px;
             margin: 0;
-            padding: 0 55px 0 0;
 
             @media (min-width:767px) {
                 font-size: 36px;
